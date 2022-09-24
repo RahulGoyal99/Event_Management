@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    throw new Error('Please Enter Details');
   }
   constructor(private route:Router){}
   msg:String ="";
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     var firstName = form.Email;
    
     this.buttonTitle = this.visible?"submit":"submit";
-    if(form.Email=="abc" && form.Password==123)
+    if(form.Email=="Admin" && form.Password==123456789)
     {
       this.visible = this.visible?false:true;
       this.msg="Login Successfull";
@@ -36,11 +36,11 @@ export class AppComponent implements OnInit {
     else
     {
       this.visible=false;
-      this.msg="Invalid User or Password";
+      this.msg="Invalid Credentials";
     }
   
    this.m="hidden";
-   this.loginPage="go to login Page";
+   this.loginPage="Back to Login Page";
 
   
   }

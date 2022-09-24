@@ -53,7 +53,7 @@ export class CrudHttpService {
         `body was: ${error.error}`);
     }
     return throwError(
-      'Something bad happened; please try again later.');
+      'Some error happened, Please try again later.');
   };
 
 }

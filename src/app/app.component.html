@@ -2,16 +2,16 @@
  
   h1
   {
-    background-color: blue;
-    color: red;
+    background-color: rgb(169, 219, 77);
+    color: rgb(88, 38, 129);
     text-align: center;
   }
   .container
   {
-    border: 2px solid black;
+    border: 2px solid rgb(121, 49, 49);
     padding: 15px;
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(221, 171, 77);
   }
 </style>
 <a href=".container"><h2>{{loginPage}}</h2></a>
@@ -32,9 +32,9 @@
           <label for="Password">Password</label>
           <input required minlength="3" maxlength="10" ngModel name="Password" type="password" #Password="ngModel" class="form-control" id="Password">
           <div class="alert alert-danger" *ngIf="Password.touched && !Password.valid">
-              <div *ngIf="Password.errors?.['required']">Password  is required.</div>
+              <div *ngIf="Password.errors?.['required']">Password is required.</div>
               <div *ngIf="Password.errors?.['minlength']">Password is minimum {{ Password.errors?.['minlength'].requiredLength }} character.</div>
-              <div *ngIf="Password.errors?.['maxlength']">Passwordis maximum 10 character.</div>
+              <div *ngIf="Password.errors?.['maxlength']">Password is maximum 15 character.</div>
           </div>
       </div><br>
       
